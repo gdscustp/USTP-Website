@@ -1,0 +1,236 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open sans', sans-serif, Arial, Helvetica;
+}
+
+/*Style for Banner*/
+
+.banner {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../assets/hero-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner h1 {
+    color: #383838;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 20px;
+}
+
+.banner button {
+    /* padding: 15px;*/
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-width: 2px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    ;
+    color: #498CF6;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color, 0.35s;
+    margin-top: 15px;
+}
+
+.banner button:hover {
+    background-color: #ffffff;
+}
+
+
+
+/* Style for section one which covers the about us description and team description*/
+
+/*Section-1 container*/
+.section-1 {
+    display: flex;
+    height: 120vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-1-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    border-radius: 50px;
+    background-color: rgba(73, 140, 246, 0.1);
+    ;
+}
+
+/*About us container*/
+.about-content {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.about-left img {
+    width: 557px;
+    height: auto;
+
+}
+
+
+
+.about-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+
+.about-right h2 {
+    width: 494px;
+    padding-bottom: 20px;
+    font-size: 42px;
+    font-weight: 'bold';
+
+}
+
+.about-right p {
+    width: 494px;
+    font-size: 18px;
+}
+
+.about-right button {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 2px;
+    border: 0.8px solid #498CF6;
+    color: #498CF6;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color, color, 0.15s;
+    margin-top: 15px;
+}
+
+.about-right button:hover {
+    background-color: #ffffff;
+}
+
+/*Style for team container*/
+.team {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.team-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+
+}
+
+.team-left h2 {
+    width: 600px;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.team-left p {
+    font-size: 18px;
+    width: 494px;
+    text-align: right;
+}
+
+.team-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.team-right img {
+    width: 557px;
+    height: auto;
+
+}
+
+/*Partners*/
+.partners {
+    display: flex;
+    height: 65vh;
+    background-color: #ffffff;
+    justify-content: center;
+}
+
+.partners h1{
+    font-size: 44px;
+    font-weight: 700;
+}
+
+
+.gallery {
+    display: flex;
+    height: 100vh;
+    background-color:  #ffffff;
+    justify-content: center;
+}
+
+.gallery h1{
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.news {
+    display: flex;
+    height: 100vh;
+    background-color:  #ffffff;
+    justify-content: center;
+}
+
+.cta {
+    display: flex;
+    height: 70vh;
+    background-color:  #ffffff;
+    justify-content: center;
+}
+
+.story{
+    object-fit: cover;
+    height: fit-content;
+}
+

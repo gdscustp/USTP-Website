@@ -1,0 +1,157 @@
+/* Style sheet for Navigation Bar Component*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    display: flex;
+    flex-shrink: 1;
+    height: 70px;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.848);
+    transition: .3s ease-in;
+}
+
+
+.nav-bar.active {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+}
+
+.nav-bar,
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.items {
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 20px;
+    transition: font-weight, background-color, 0.15s;
+}
+
+.nav-bar.active .items:hover {
+    font-weight: 700;
+    background-color:  rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    font-weight: 700;
+
+}
+
+.nav-bar .items:hover{
+    font-weight: 700;
+    background-color:  rgba(0, 0, 0, 0.188);
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.top-left {
+    display: flex;
+    width: 15%;
+    justify-content: center;
+
+}
+
+.top-left img {
+    cursor: pointer;
+}
+
+.top-center {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    padding-right: 15px;
+
+}
+
+.top-right {
+    display: flex;
+    width: 15%;
+    justify-content: flex-end;
+    padding-right: 15px;
+
+}
+
+/*.reg-btn.active {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-width: 2px;
+    border: 1.5px solid transparent;
+    border-radius: 20px;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right,#498CF6, #EB483B, #FBC10E, #4EA865) border-box;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color, color, 0.15s;
+}*/
+
+.reg-btn {
+    display: flex;
+    flex-shrink: 1;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-width: 2px;
+    border: 0.8px solid #242424;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color, color, 0.15s;
+}
+
+.reg-btn:hover {
+    background-color: #242424;
+    color: #ffffff;
+}
+
+.reg-btn.active {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-width: 2px;
+    border: 0.8px solid #498CF6;
+    color: #498CF6;
+    border-radius: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color, color, 0.15s;
+}
+
+.reg-btn.active:hover {
+    background: #242424;
+    color: #ffffff;
+    border: none;
+}
+
+
+.hamburger {
+    display: none;
+}
