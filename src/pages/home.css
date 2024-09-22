@@ -64,6 +64,7 @@ body {
 }
 
 .banner h1 #gradient {
+    /* TODO: Swap the percentages per color randomly after implementing the banner svg animations. (https://www.figma.com/proto/XiTdSq6rnkDkqZpkr27d4Q/GDSC.USTP?node-id=76-353&t=DJG1gSu4UqrGKlev-1&scaling=min-zoom&content-scaling=fixed&page-id=76%3A351&starting-point-node-id=76%3A353) */
     background: linear-gradient(90deg, 
         #4EA865 25%,   /* 25% for green */
         #FBC10E 50%,   /* 50% for yellow */
