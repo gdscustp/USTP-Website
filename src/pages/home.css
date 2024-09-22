@@ -1,8 +1,54 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Open sans', sans-serif, Arial, Helvetica;
+    font-family: 'Google-Sans','Open sans', sans-serif, Arial;
 }
+
+body {
+    font-family: 'Google-Sans'; /* Custom font with fallbacks */
+    color: #383838; /* Set default text color */
+    font-weight: 500;
+}
+
+
+
+/* Custom font face */
+@font-face { 
+    font-family: 'Google-Sans';
+    src: url('../assets/fonts/GoogleSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+@font-face { 
+    font-family: 'Google-Sans';
+    src: url('../assets/fonts/GoogleSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal; 
+}
+
+@font-face { 
+    font-family: 'Google-Sans';
+    src: url('../assets/fonts/GoogleSans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic; 
+}
+
+@font-face { 
+    font-family: 'Google-Sans';
+    src: url('../assets/fonts/GoogleSans-Medium.ttf') format('truetype');
+    font-weight: 500; /* or medium */
+    font-style: normal; 
+}
+
+@font-face { 
+    font-family: 'Google-Sans';
+    src: url('../assets/fonts/GoogleSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500; /* or medium */
+    font-style: italic; 
+}
+
+
 
 /*Style for Banner*/
 
@@ -17,10 +63,32 @@
     background-size: cover;
 }
 
+.banner h1 #gradient {
+    background: linear-gradient(90deg, 
+        #4EA865 25%,   /* 25% for green */
+        #FBC10E 50%,   /* 50% for yellow */
+        #EB483B 75%,   /* 75% for red */
+        #498CF6 100%); /* 100% for blue */
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: "Google-Sans";
+    -webkit-text-fill-color: transparent;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+
+}
 .banner h1 {
     color: #383838;
     font-size: 64px;
     font-weight: bold;
+    display: flex;
+    font-family: "Google-Sans";
+    width: 982px;
+    height: 81px;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner p {

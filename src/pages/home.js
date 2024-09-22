@@ -18,8 +18,8 @@ export default function Home() {
                 <header className="banner">
 
 
-
-                    <h1>Building Good Things, Together!</h1>
+            
+                    <h1>Building Good Things,&nbsp;<span id="gradient">Together!</span></h1>
                     <p>Rorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
                     <button>
