@@ -3,6 +3,8 @@
 * {
     margin: 0;
     padding: 0;
+
+
 }
 
 .nav-bar {
@@ -39,8 +41,8 @@ ul {
 }
 
 .items {
+    font-family: "Google-Sans";
     cursor: pointer;
-    color: #000000;
     text-decoration: none;
     border: 1px solid transparent;
     padding-top: 5px;
@@ -49,7 +51,9 @@ ul {
     padding-right: 12px;
     border-radius: 20px;
     transition: font-weight, background-color, 0.15s;
-}
+    font-size: px;
+    font-weight: bold;
+}   
 
 .nav-bar.active .items:hover {
     font-weight: 700;
@@ -141,7 +145,7 @@ ul {
     border-radius: 20px;
     background-color: transparent;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 500;
     transition: background-color, color, 0.15s;
 }
 
