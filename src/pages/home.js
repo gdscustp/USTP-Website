@@ -20,7 +20,7 @@ export default function Home() {
 
             
                     <h1>Building Good Things,&nbsp;<span id="gradient">Together!</span></h1>
-                    <p>Rorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p id="tagline">Rorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
                     <button>
                         Learn More

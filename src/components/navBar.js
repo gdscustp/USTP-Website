@@ -26,7 +26,7 @@ export default function NavigationBar() {
     const NavLinkStyle = ({ isActive }) => {
         return {
             color: isActive ? '#ffffffff' : '#000000',
-            fontWeight: isActive ? 'bold' : 'normal',
+            fontWeight: isActive ? 'medium' : 'bold',
             backgroundColor: isActive ? '#498CF6' : null,
             paddingTop: isActive ? 5 : null,
             paddingBottom: isActive ? 5 : null,
@@ -41,7 +41,7 @@ export default function NavigationBar() {
     const NavLinkStyleTwo = ({ isActive }) => {
         return {
             color: isActive ? '#ffffffff' : '#000000',
-            fontWeight: isActive ? 'bold' : 'bolder',
+            fontWeight: isActive ? 'medium' : 'bold',
             backgroundColor: isActive ? '#EB483B' : null,
             paddingTop: isActive ? 5 : null,
             paddingBottom: isActive ? 5 : null,
@@ -57,7 +57,7 @@ export default function NavigationBar() {
     const NavLinkStyleThree = ({ isActive }) => {
         return {
             color: isActive ? '#ffffffff' : '#000000',
-            fontWeight: isActive ? 'bold' : 'bolder',
+            fontWeight: isActive ? 'medium' : 'bold',
             backgroundColor: isActive ? '#4EA865' : null,
             paddingTop: isActive ? 5 : null,
             paddingBottom: isActive ? 5 : null,
