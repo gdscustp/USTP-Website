@@ -40,7 +40,7 @@ export default function Home() {
 
                         <div className="about-content">
                             <div className="about-left">
-                                <img src={About} alt='About us' />
+                                <img src={About} alt='About us' draggable={false}/>
                             </div>
 
                             <div className="about-right">
@@ -76,7 +76,7 @@ export default function Home() {
                             </div>
 
                             <div className="team-right">
-                                <img src={About} alt='About us' />
+                                <img src={About} alt='About us' draggable={false}/>
 
 
 
