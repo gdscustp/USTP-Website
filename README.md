@@ -32,8 +32,8 @@ This is the official **GDSC USTP (Google Developer Student Clubs - University of
 To set up the project locally:
 
 ```bash
-git clone https://github.com/your-username/gdsc-ustp-website.git
-cd gdsc-ustp-website
+git clone git clone https://github.com/gdscustp/USTP-Website.git
+cd USTP-Website
 npm install
 ```
 
