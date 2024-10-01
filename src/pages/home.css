@@ -237,14 +237,13 @@ html {
     height: auto;
 }
 
-/* Partners */
 .partners {
     display: flex;
     height: 65vh;
-    background-color: #4285F4; /* Google Blue */
+    background-color: #4285F4;
     justify-content: center;
     align-items: center;
-    color: #ffffff; /* White text for contrast */
+    color: #ffffff;
 }
 
 .partners h1 {
@@ -252,14 +251,14 @@ html {
     font-weight: 700;
 }
 
-/* Gallery */
+
 .gallery {
     display: flex;
     height: 100vh;
-    background-color: #F4B400; /* Google Yellow */
+    background-color: #F4B400;
     justify-content: center;
     align-items: center;
-    color: #ffffff; /* White text for contrast */
+    color: #ffffff; 
 }
 
 .gallery h1 {
@@ -267,24 +266,22 @@ html {
     font-weight: 700;
 }
 
-/* News */
-.news {
+.wtsup {
     display: flex;
     height: 100vh;
-    background-color: #DB4437; /* Google Red */
+    background-color: #DB4437;
     justify-content: center;
     align-items: center;
-    color: #ffffff; /* White text for contrast */
+    color: #ffffff; 
 }
 
-/* CTA */
 .cta {
     display: flex;
     height: 70vh;
-    background-color: #0F9D58; /* Google Green */
+    background-color: #0F9D58;
     justify-content: center;
     align-items: center;
-    color: #ffffff; /* White text for contrast */
+    color: #ffffff;
 }
 
 .cta h1 {

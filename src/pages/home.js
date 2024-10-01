@@ -9,24 +9,21 @@ import 'aos/dist/aos.css';
 
 export default function Home() {
 
-    // Initialize AOS for scroll animations
     useEffect(() => {
         AOS.init();
     }, []);
 
-    // Parallax effect for the background images
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.pageYOffset;
 
-            // Apply parallax effect to each section
             document.querySelectorAll('.partners, .gallery, .news, .cta').forEach(section => {
-                section.style.backgroundPositionX = `${scrollPosition * 0.5}px`; // Adjust multiplier for speed
+                section.style.backgroundPositionX = `${scrollPosition * 0.5}px`;
             });
         };
 
         window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll); // Cleanup event listener
+        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     return (
@@ -78,7 +75,7 @@ export default function Home() {
                     <h1>Inspiring members</h1>
                 </section>
 
-                <section className="news" data-aos="fade-up">
+                <section className="wtsup" data-aos="fade-up">
                     <h1>What's up?</h1>
                 </section>
 
