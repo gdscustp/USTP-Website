@@ -69,6 +69,20 @@ export default function NavigationBar() {
 
     }
 
+    const NavLinkStyleFour = ({ isActive }) => {
+        return {
+            color: isActive ? '#ffffffff' : '#000000',
+            fontWeight: isActive ? 'medium' : 'bold',
+            backgroundColor: isActive ? '#ffce44' : null,
+            paddingTop: isActive ? 5 : null,
+            paddingBottom: isActive ? 5 : null,
+            paddingRight: isActive ? 12 : null,
+            paddingLeft: isActive ? 12 : null,
+            borderRadius: isActive ? 20 : null
+        }
+    }
+    
+
     return (
         <nav className={navbar ? "nav-bar" : "nav-bar active"}>
 
@@ -91,7 +105,7 @@ export default function NavigationBar() {
                     </li>
 
                     <li>
-                        <NavLink style={NavLinkStyle} to="/events" className='items'>Events</NavLink>
+                        <NavLink style={NavLinkStyleFour} to="/events" className='items'>Events</NavLink>
                     </li>
                 </ul>
             </div>
