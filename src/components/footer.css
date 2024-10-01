@@ -1,24 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 html, body {
     height: 100%;
-    margin: 0;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh; 
 }
 
 .footer {
     display: flex;
+    flex-direction: column;
     color: #ffffff;
     width: 100%;
     background-color: #212121;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     margin-top: auto; 
+    position: relative;
+    z-index: 1;
 }
+
 
 .lower {
     width: 100%;

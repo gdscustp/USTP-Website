@@ -5,14 +5,15 @@
 }
 
 body {
-    font-family: 'Google-Sans'; /* Custom font with fallbacks */
-    color: #383838; /* Set default text color */
+    font-family: 'Google-Sans';
+    color: #383838;
     font-weight: 500;
 }
 
 html {
     scroll-behavior: smooth;
 }
+
 /* Custom font face */
 @font-face { 
     font-family: 'Google-Sans';
@@ -38,14 +39,14 @@ html {
 @font-face { 
     font-family: 'Google-Sans';
     src: url('../assets/fonts/GoogleSans-Medium.ttf') format('truetype');
-    font-weight: 500; /* or medium */
+    font-weight: 500;
     font-style: normal; 
 }
 
 @font-face { 
     font-family: 'Google-Sans';
     src: url('../assets/fonts/GoogleSans-MediumItalic.ttf') format('truetype');
-    font-weight: 500; /* or medium */
+    font-weight: 500;
     font-style: italic; 
 }
 
@@ -94,10 +95,7 @@ html {
 }
 
 .banner button {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 12px 20px;
     border: none;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.4);
@@ -117,42 +115,37 @@ html {
 /* Section-1 container */
 .section-1 {
     display: flex;
-    height: 120vh;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 50px 0;
 }
 
 .section-1-container {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 90%;
     width: 90%;
-    border-radius: 50px;
+    border-radius: 20px;
     background-color: rgba(73, 140, 246, 0.1);
 }
 
 /* About us container */
 .about-content {
     display: flex;
-    height: 50%;
     width: 100%;
     justify-content: center;
-    flex-direction: row;
-    align-items: center;
+    margin-bottom: 20px;
 }
 
 .about-left {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: 50%; 
 }
 
 .about-left img {
-    width: 557px;
+    width: 100%;
     height: auto;
 }
 
@@ -160,19 +153,18 @@ html {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+    width: 50%; 
 }
 
 .about-right h2 {
-    width: 494px;
+    width: 100%; 
     padding-bottom: 20px;
     font-size: 42px;
     font-weight: bold;
 }
 
 .about-right p {
-    width: 494px;
+    width: 100%; 
     font-size: 18px;
 }
 
@@ -195,11 +187,9 @@ html {
 /* Style for team container */
 .team {
     display: flex;
-    height: 50%;
     width: 100%;
     justify-content: center;
-    flex-direction: row;
-    align-items: center;
+    margin-top: 20px;
 }
 
 .team-left {
@@ -207,12 +197,11 @@ html {
     justify-content: center;
     flex-direction: column;
     align-items: flex-end;
-    width: 100%;
-    height: 100%;
+    width: 50%;
 }
 
 .team-left h2 {
-    width: 600px;
+    width: 100%;
     font-size: 42px;
     font-weight: 700;
     text-align: right;
@@ -220,7 +209,7 @@ html {
 
 .team-left p {
     font-size: 18px;
-    width: 494px;
+    width: 100%;
     text-align: right;
 }
 
@@ -228,22 +217,24 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 50%;
 }
 
 .team-right img {
-    width: 557px;
+    width: 100%;
     height: auto;
 }
 
 .partners {
     display: flex;
-    height: 65vh;
+    height: auto; /* Changed to auto for dynamic content */
+    min-height: 65vh; /* Ensures a minimum height */
     background-color: #4285F4;
     justify-content: center;
     align-items: center;
     color: #ffffff;
+    margin: 0px 0;
+    padding: 20px 0; /* Added padding for spacing */
 }
 
 .partners h1 {
@@ -251,14 +242,16 @@ html {
     font-weight: 700;
 }
 
-
 .gallery {
     display: flex;
-    height: 100vh;
+    height: auto; /* Changed to auto for dynamic content */
+    min-height: 100vh; /* Ensures a minimum height */
     background-color: #F4B400;
     justify-content: center;
     align-items: center;
     color: #ffffff; 
+    margin: 0px 0;
+    padding: 20px 0; /* Added padding for spacing */
 }
 
 .gallery h1 {
@@ -268,20 +261,26 @@ html {
 
 .wtsup {
     display: flex;
-    height: 100vh;
+    height: auto; /* Changed to auto for dynamic content */
+    min-height: 100vh; /* Ensures a minimum height */
     background-color: #DB4437;
     justify-content: center;
     align-items: center;
     color: #ffffff; 
+    margin: 0px 0;
+    padding: 20px 0; /* Added padding for spacing */
 }
 
 .cta {
     display: flex;
-    height: 70vh;
+    height: auto; /* Changed to auto for dynamic content */
+    min-height: 70vh; /* Ensures a minimum height */
     background-color: #0F9D58;
     justify-content: center;
     align-items: center;
     color: #ffffff;
+    margin: 0px 0;
+    padding: 20px 0; /* Added padding for spacing */
 }
 
 .cta h1 {
@@ -292,11 +291,4 @@ html {
 .story {
     object-fit: cover;
     height: fit-content;
-}
-
-.partners, .gallery, .news, .cta {
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: background-position 0.5s ease-out;
 }
