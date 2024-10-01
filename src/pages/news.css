@@ -4,13 +4,13 @@
 
 }
 
-.main {
+.news {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background-color: brown;
+    background-color: #0F9D58;
 }
 
 .carousel {
