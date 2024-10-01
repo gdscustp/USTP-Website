@@ -11,7 +11,7 @@ export default function NavigationBar() {
     const [navbar, setNavbar] = useState(false)
 
     const changeBackground = () => {
-
+        
         if (window.scrollY >= 300) {
             setNavbar(true)
         }
@@ -20,7 +20,7 @@ export default function NavigationBar() {
         }
 
     }
-
+    
     window.addEventListener('scroll', changeBackground)
 
     const NavLinkStyle = ({ isActive }) => {
