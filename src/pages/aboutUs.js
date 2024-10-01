@@ -19,7 +19,7 @@ export default function AboutUs() {
 
 
 
-            <Footer />
+            <Footer/>
         </>
 
     )

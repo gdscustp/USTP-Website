@@ -4,13 +4,13 @@
 
 }
 
-.main {
+.events {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    background-color: brown;
+    background-color: #FBBC05;
 }
 
 .carousel {
@@ -20,5 +20,4 @@
     flex-direction: column;
     height: 50%;
     width: 100%;
-    background-color: aqua;
 }
