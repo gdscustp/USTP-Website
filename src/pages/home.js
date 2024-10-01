@@ -8,22 +8,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export default function Home() {
-
     useEffect(() => {
         AOS.init();
-    }, []);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollPosition = window.pageYOffset;
-
-            document.querySelectorAll('.partners, .gallery, .news, .cta').forEach(section => {
-                section.style.backgroundPositionX = `${scrollPosition * 0.5}px`;
-            });
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     return (
@@ -33,7 +19,6 @@ export default function Home() {
                 <header className="banner">
                     <h1>Building Good Things,&nbsp;<span id="gradient">Together!</span></h1>
                     <p id="tagline">Rorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
                     <button>
                         Learn More
                     </button>
