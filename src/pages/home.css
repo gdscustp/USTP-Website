@@ -118,6 +118,7 @@ html {
     flex-direction: column;
     align-items: center;
     padding: 50px 0;
+    background-color: #f9f9f9;
 }
 
 .section-1-container {
@@ -125,116 +126,129 @@ html {
     flex-direction: column;
     align-items: center;
     width: 90%;
+    max-width: 1200px; 
     border-radius: 20px;
     background-color: rgba(73, 140, 246, 0.1);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 /* About us container */
 .about-content {
     display: flex;
     width: 100%;
-    justify-content: center;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap; 
+}
+
+.about-left, .about-right {
+    width: 48%; 
 }
 
 .about-left {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%; 
 }
 
 .about-left img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .about-right {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    width: 50%; 
+    justify-content: center;
+    padding-left: 20px; 
 }
 
 .about-right h2 {
-    width: 100%; 
-    padding-bottom: 20px;
-    font-size: 42px;
+    font-size: 36px;
     font-weight: bold;
+    color: #383838;
 }
 
 .about-right p {
-    width: 100%; 
     font-size: 18px;
+    line-height: 1.6;
+    color: #555555;
 }
 
 .about-right button {
-    padding: 10px 15px;
-    border: 0.8px solid #498CF6;
+    padding: 12px 20px;
+    border: 2px solid #498CF6;
     color: #498CF6;
     border-radius: 20px;
     background-color: transparent;
     cursor: pointer;
     font-weight: 700;
-    transition: background-color, color, 0.15s;
+    transition: background-color 0.3s, color 0.3s;
     margin-top: 15px;
 }
 
 .about-right button:hover {
-    background-color: #ffffff;
+    background-color: #498CF6;
+    color: #ffffff;
 }
 
 /* Style for team container */
 .team {
     display: flex;
     width: 100%;
-    justify-content: center;
-    margin-top: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.team-left, .team-right {
+    width: 48%;
 }
 
 .team-left {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: flex-end;
-    width: 50%;
+    justify-content: center;
+    text-align: right;
+    padding-right: 20px; 
 }
 
 .team-left h2 {
-    width: 100%;
-    font-size: 42px;
-    font-weight: 700;
-    text-align: right;
+    font-size: 36px;
+    font-weight: bold;
+    color: #383838;
 }
 
 .team-left p {
     font-size: 18px;
-    width: 100%;
-    text-align: right;
+    line-height: 1.6;
+    color: #555555;
 }
 
 .team-right {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 50%;
+    justify-content: center;
 }
 
 .team-right img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .partners {
     display: flex;
-    height: auto; /* Changed to auto for dynamic content */
-    min-height: 65vh; /* Ensures a minimum height */
+    height: auto;
+    min-height: 65vh;
     background-color: #4285F4;
     justify-content: center;
     align-items: center;
     color: #ffffff;
     margin: 0px 0;
-    padding: 20px 0; /* Added padding for spacing */
+    padding: 20px 0;
 }
 
 .partners h1 {
@@ -244,14 +258,14 @@ html {
 
 .gallery {
     display: flex;
-    height: auto; /* Changed to auto for dynamic content */
-    min-height: 100vh; /* Ensures a minimum height */
+    height: auto; 
+    min-height: 100vh; 
     background-color: #F4B400;
     justify-content: center;
     align-items: center;
     color: #ffffff; 
     margin: 0px 0;
-    padding: 20px 0; /* Added padding for spacing */
+    padding: 20px 0; 
 }
 
 .gallery h1 {
@@ -261,26 +275,26 @@ html {
 
 .wtsup {
     display: flex;
-    height: auto; /* Changed to auto for dynamic content */
-    min-height: 100vh; /* Ensures a minimum height */
+    height: auto;
+    min-height: 100vh; 
     background-color: #DB4437;
     justify-content: center;
     align-items: center;
     color: #ffffff; 
     margin: 0px 0;
-    padding: 20px 0; /* Added padding for spacing */
+    padding: 20px 0;
 }
 
 .cta {
     display: flex;
-    height: auto; /* Changed to auto for dynamic content */
-    min-height: 70vh; /* Ensures a minimum height */
+    height: auto; 
+    min-height: 70vh; 
     background-color: #0F9D58;
     justify-content: center;
     align-items: center;
     color: #ffffff;
     margin: 0px 0;
-    padding: 20px 0; /* Added padding for spacing */
+    padding: 20px 0; 
 }
 
 .cta h1 {
@@ -291,4 +305,46 @@ html {
 .story {
     object-fit: cover;
     height: fit-content;
+}
+/* Add this at the end of your home.css */
+
+/* Trusted by People Section */
+.trusted {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    background-color: rgba(73, 140, 246, 0.1);
+}
+
+.trusted h1 {
+    font-size: 44px;
+    font-weight: 700;
+    color: #383838;
+    margin-bottom: 40px;
+}
+
+.trusted-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.trusted-logos img {
+    max-width: 150px;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+}
+
+.trusted-logos img:hover {
+    transform: scale(1.1);
+}
+.trusted-logos img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; 
+    margin: 10px; 
 }
