@@ -1,37 +1,59 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html, body {
-    height: 100%;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
-}
-
 .footer {
-    display: flex;
-    flex-direction: column;
-    color: #ffffff;
-    width: 100%;
-    background-color: #212121;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto; 
-    position: relative;
-    z-index: 1;
+    width: 100%; /* Full width */
+    height: 96px; /* Set height */
+    background: #EAEAEA; /* Background color */
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 0 20px; /* Horizontal padding */
+    box-sizing: border-box; /* Include padding in width */
+    position: relative; /* Ensure proper positioning */
 }
 
+.footer-content {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width */
+    max-width: 1280px; /* Limit max width */
+    justify-content: space-between;
+}
+
+.footer-text {
+    display: flex; /* Flexbox for text and links */
+    align-items: center; /* Center items vertically */
+}
+
+.footer-links {
+    display: flex; /* Flexbox for link layout */
+    align-items: center; /* Center links vertically */
+    margin-left: 0; /* Reduced margin to bring links closer to text */
+}
+
+.separator {
+    width: 8px; /* Separator width */
+    height: 8px; /* Separator height */
+    background: #D9D9D9; /* Separator color */
+    border-radius: 50%; /* Round separator */
+    margin: 0 5px; /* Space around separator */
+}
+
+.footer-link {
+    font-family: 'Google Sans', sans-serif; /* Font style */
+    font-size: 16px; /* Font size */
+    color: #B0B0B0; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.footer-link:hover {
+    color: #000000; /* Change color on hover */
+}
 
 .lower {
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: #4285F4;
-    font-weight: 300;
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 0 20px; /* Horizontal padding */
+    flex: 1; /* Flex-grow for lower section */
 }

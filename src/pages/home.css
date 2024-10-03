@@ -117,20 +117,21 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0;
-    background-color: #f9f9f9;
+    padding: 30px 0;
+    background-color: #ffffff; 
 }
 
 .section-1-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
-    max-width: 1200px; 
-    border-radius: 20px;
-    background-color: rgba(73, 140, 246, 0.1);
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 95%;
+    max-width: 1400px; 
+    border-radius: 30px; 
+    background-color: #498CF61A;    
+    padding: 30px;
+    padding-left: 0px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
 /* About us container */
@@ -138,7 +139,7 @@ html {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 40px; 
     flex-wrap: wrap; 
 }
 
@@ -153,40 +154,40 @@ html {
 }
 
 .about-left img {
-    width: 100%;
+    width: 90%; 
     height: auto;
-    border-radius: 10px;
+    border-radius: 15px; 
 }
 
 .about-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 20px; 
+    padding-left: 30px;
 }
 
 .about-right h2 {
-    font-size: 36px;
+    font-size: 40px; 
     font-weight: bold;
-    color: #383838;
+    color: #333333; 
 }
 
 .about-right p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #555555;
+    font-size: 20px; 
+    line-height: 1.7; 
+    color: #666666; 
 }
 
 .about-right button {
-    padding: 12px 20px;
+    padding: 14px 24px;
     border: 2px solid #498CF6;
     color: #498CF6;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: transparent;
     cursor: pointer;
     font-weight: 700;
     transition: background-color 0.3s, color 0.3s;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .about-right button:hover {
@@ -200,7 +201,7 @@ html {
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .team-left, .team-right {
@@ -212,19 +213,19 @@ html {
     flex-direction: column;
     justify-content: center;
     text-align: right;
-    padding-right: 20px; 
+    padding-right: 30px; 
 }
 
 .team-left h2 {
-    font-size: 36px;
+    font-size: 40px; 
     font-weight: bold;
-    color: #383838;
+    color: #333333;
 }
 
 .team-left p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #555555;
+    font-size: 20px; 
+    line-height: 1.7; 
+    color: #666666; 
 }
 
 .team-right {
@@ -234,10 +235,11 @@ html {
 }
 
 .team-right img {
-    width: 100%;
+    width: 90%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 15px;
 }
+
 
 .partners {
     display: flex;
@@ -306,7 +308,6 @@ html {
     object-fit: cover;
     height: fit-content;
 }
-/* Add this at the end of your home.css */
 
 /* Trusted by People Section */
 .trusted {
@@ -314,7 +315,7 @@ html {
     flex-direction: column;
     align-items: center;
     padding: 50px 0;
-    background-color: rgba(73, 140, 246, 0.1);
+    background-color: white;
 }
 
 .trusted h1 {
@@ -333,18 +334,16 @@ html {
 }
 
 .trusted-logos img {
-    max-width: 150px;
-    margin: 0 20px;
-    transition: transform 0.3s ease;
-}
-
-.trusted-logos img:hover {
-    transform: scale(1.1);
-}
-.trusted-logos img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover; 
-    margin: 10px; 
+    margin: 10px;
+    transition: transform 0.3s ease;
 }
+
+.trusted-logos img:hover {
+    transform: scale(1.1); 
+}
+
+
