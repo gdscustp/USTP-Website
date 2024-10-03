@@ -117,124 +117,139 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0;
+    padding: 30px 0;
+    background-color: #ffffff; 
 }
 
 .section-1-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
-    border-radius: 20px;
-    background-color: rgba(73, 140, 246, 0.1);
+    width: 95%;
+    border-radius: 30px; 
+    background-color: #498CF61A;    
+    padding: 30px;
+    padding-left: 0px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
 }
 
 /* About us container */
 .about-content {
     display: flex;
     width: 100%;
-    justify-content: center;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    margin-bottom: 40px; 
+    flex-wrap: wrap; 
+}
+
+.about-left, .about-right {
+    width: 48%; 
 }
 
 .about-left {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%; 
 }
 
 .about-left img {
-    width: 100%;
+    width: 90%; 
     height: auto;
+    border-radius: 15px; 
 }
 
 .about-right {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    width: 50%; 
+    justify-content: center;
+    padding-left: 30px;
 }
 
 .about-right h2 {
-    width: 100%; 
-    padding-bottom: 20px;
-    font-size: 42px;
+    font-size: 40px; 
     font-weight: bold;
+    color: #333333; 
 }
 
 .about-right p {
-    width: 100%; 
-    font-size: 18px;
+    font-size: 20px; 
+    line-height: 1.7; 
+    color: #666666; 
 }
 
 .about-right button {
-    padding: 10px 15px;
-    border: 0.8px solid #498CF6;
+    padding: 14px 24px;
+    border: 2px solid #498CF6;
     color: #498CF6;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: transparent;
     cursor: pointer;
     font-weight: 700;
-    transition: background-color, color, 0.15s;
-    margin-top: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
 }
 
 .about-right button:hover {
-    background-color: #ffffff;
+    background-color: #498CF6;
+    color: #ffffff;
 }
 
 /* Style for team container */
 .team {
     display: flex;
     width: 100%;
-    justify-content: center;
-    margin-top: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.team-left, .team-right {
+    width: 48%;
 }
 
 .team-left {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: flex-end;
-    width: 50%;
+    justify-content: center;
+    text-align: right;
+    padding-right: 30px; 
 }
 
 .team-left h2 {
-    width: 100%;
-    font-size: 42px;
-    font-weight: 700;
-    text-align: right;
+    font-size: 40px; 
+    font-weight: bold;
+    color: #333333;
 }
 
 .team-left p {
-    font-size: 18px;
-    width: 100%;
-    text-align: right;
+    font-size: 20px; 
+    line-height: 1.7; 
+    color: #666666; 
 }
 
 .team-right {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 50%;
+    justify-content: center;
 }
 
 .team-right img {
-    width: 100%;
+    width: 90%;
     height: auto;
+    border-radius: 15px;
 }
+
 
 .partners {
     display: flex;
-    height: auto; /* Changed to auto for dynamic content */
-    min-height: 65vh; /* Ensures a minimum height */
+    height: auto;
+    min-height: 65vh;
     background-color: #4285F4;
     justify-content: center;
     align-items: center;
     color: #ffffff;
     margin: 0px 0;
-    padding: 20px 0; /* Added padding for spacing */
+    padding: 20px 0;
 }
 
 .partners h1 {
@@ -244,14 +259,14 @@ html {
 
 .gallery {
     display: flex;
-    height: auto; /* Changed to auto for dynamic content */
-    min-height: 100vh; /* Ensures a minimum height */
+    height: auto; 
+    min-height: 100vh; 
     background-color: #F4B400;
     justify-content: center;
     align-items: center;
     color: #ffffff; 
     margin: 0px 0;
-    padding: 20px 0; /* Added padding for spacing */
+    padding: 20px 0; 
 }
 
 .gallery h1 {
@@ -261,26 +276,26 @@ html {
 
 .wtsup {
     display: flex;
-    height: auto; /* Changed to auto for dynamic content */
-    min-height: 100vh; /* Ensures a minimum height */
+    height: auto;
+    min-height: 100vh; 
     background-color: #DB4437;
     justify-content: center;
     align-items: center;
     color: #ffffff; 
     margin: 0px 0;
-    padding: 20px 0; /* Added padding for spacing */
+    padding: 20px 0;
 }
 
 .cta {
     display: flex;
-    height: auto; /* Changed to auto for dynamic content */
-    min-height: 70vh; /* Ensures a minimum height */
+    height: auto; 
+    min-height: 70vh; 
     background-color: #0F9D58;
     justify-content: center;
     align-items: center;
     color: #ffffff;
     margin: 0px 0;
-    padding: 20px 0; /* Added padding for spacing */
+    padding: 20px 0; 
 }
 
 .cta h1 {
@@ -292,3 +307,42 @@ html {
     object-fit: cover;
     height: fit-content;
 }
+
+/* Trusted by People Section */
+.trusted {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    background-color: white;
+}
+
+.trusted h1 {
+    font-size: 44px;
+    font-weight: 700;
+    color: #383838;
+    margin-bottom: 40px;
+}
+
+.trusted-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.trusted-logos img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; 
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.trusted-logos img:hover {
+    transform: scale(1.1); 
+}
+
+

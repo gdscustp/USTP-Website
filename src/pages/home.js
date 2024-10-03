@@ -52,13 +52,23 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className="partners" data-aos="fade-up">
+                {}
+                <section className="trusted" data-aos="fade-up">
                     <h1>Trusted by People</h1>
+                    <div className="trusted-logos">
+                        <img src={require('../assets/picturetest.jpg')} alt="pic 1" />
+                        <img src={require('../assets/picturetest.jpg')} alt="pic 2" />
+                        <img src={require('../assets/picturetest.jpg')} alt="pic 3" />
+                        <img src={require('../assets/picturetest.jpg')} alt="pic 4" />
+                    </div>
                 </section>
 
                 <section className="gallery" data-aos="fade-up">
-                    <h1>Inspiring members</h1>
+                    <h1>Inspiring Members</h1>
+                    <div className="gallery-container">
+                    </div>
                 </section>
+
 
                 <section className="wtsup" data-aos="fade-up">
                     <h1>What's up?</h1>
