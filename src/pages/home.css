@@ -126,7 +126,6 @@ html {
     flex-direction: column;
     align-items: center;
     width: 95%;
-    max-width: 1400px; 
     border-radius: 30px; 
     background-color: #498CF61A;    
     padding: 30px;
